@@ -1,0 +1,11 @@
+{
+    "name": "guilherme/uni4life_implementacao",
+    "description": "Projeto da rede social voltada ao público acadêmico integrante da Universidade do Vale do Rio dos Sinos",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Devis02\\Uni4Life\\": "src\\"
+        }
+    },
+    "require": {}
+}
