@@ -17,15 +17,23 @@ class StudentRepository{
         return $stmt->execute();
     }
 
-    public function VerifyUserByEmail(string $email): bool{
-        $stmt=$this->pdo->prepare("SELECT * FROM student WHERE email=?;");
+    public function VerifyUserByEmail(string $email): ?Student{
+        $stmt=$this->pdo->prepare(query: "SELECT * FROM student WHERE email=?;");
         $stmt->bindValue(param:1,value: $email);;
         $stmt->execute();
-        if(sizeof($stmt->fetchAll())==0){
-            return false;
+        $studentData = $stmt->fetch();
+        
+        if($studentData==false){
+            return null;
         } else{
-            return true;
+            return $this->hydrateStudent(studentData: $studentData);
         }
+    }
+
+    public function hydrateStudent(array $studentData):Student{
+        $student = new Student($studentData["id"],name: $studentData["name"],email: $studentData["email"]);
+        $student->setPasswordBasedInDB(password: $studentData["password"]);
+        return $student;
     }
 
 }

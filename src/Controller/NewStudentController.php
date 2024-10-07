@@ -9,14 +9,15 @@ class NewStudentController{
     public function __construct(StudentRepository $repository) {
         $this->repository = $repository;
     }
-    public function handle(){
-        $newStudent = new Student(name: $_POST["Nome"],email: $_POST["Email"]);
+    public function handle(): void{
+        $email = filter_input(type: INPUT_POST,var_name: "Email", filter: FILTER_VALIDATE_EMAIL);
+        $newStudent = new Student(id: null,name: $_POST["Nome"],email: $email);
         $newStudent->setPassword(password: $_POST["Senha"]);
-        if($this->repository->VerifyUserByEmail($newStudent->getEmail())==false){
+        if($this->repository->VerifyUserByEmail(email: $newStudent->getEmail())==false){
             $this->repository->insertNewUser(student: $newStudent);
             header(header: "Location: /login");
         } else{
-            header("Location: /login");
+            header(header: "Location: /login");
         }
     }
 }

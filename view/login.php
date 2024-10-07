@@ -19,12 +19,14 @@
 
 
             <div class="flex-container">
-                <form id="formlogin">
+                <form id="formlogin" method="post">
                     <label for="Email">Email</label>
-                    <input id="Email" type="email" placeholder="">
-                    <label for="password">Senha</label>
-                    <input type="password" name="" id="Senha" placeholder="">
-                    <button id="Botao">Entrar</button>
+                    <input id="Email" name="Email" type="email" placeholder="">
+                    
+                    <label for="password" >Senha</label>
+                    <input type="password" name="Senha" id="Senha" placeholder="">
+                    
+                    <button id="Botao" type="submit">Entrar</button>
                     <br>
                     <a id="SemSenha" href="">Esqueceu a Senha?</a>
                 </form>

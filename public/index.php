@@ -10,7 +10,9 @@ $httpMethod = $_SERVER["REQUEST_METHOD"];
 $key = "$httpMethod|$pathInfo";
 
 session_start();
-
+if(!isset($_SESSION["Logado"]) && $pathInfo!="/login" && $pathInfo!="/cadastro") {
+    header(header: "Location:/login");
+}
 if(array_key_exists(key: $key,array: $routes)){
     $controllerClass = $routes["$httpMethod|$pathInfo"];
     $controller = new $controllerClass($repository);

@@ -5,11 +5,12 @@ namespace Devis02\Uni4Life\Model;
 class Student{
     private ?int $id;
     private string $name;
-    private string $password;
+    private ?string $password;
     private string $email;
     private string $profile_photo_path;
 
-    public function __construct(string $name,$email) {
+    public function __construct(?int $id, string $name,$email) {
+        $this->id = $id;
         $this->name = $name;
         $this->email = $email;
     }
@@ -18,6 +19,9 @@ class Student{
         $this->password = $hashed;
     }
 
+    public function setPasswordBasedInDB(string $password): void{
+        $this->password = $password;
+    }
     public function getName():string{
         return $this->name;
     }
