@@ -10,6 +10,7 @@ $httpMethod = $_SERVER["REQUEST_METHOD"];
 $key = "$httpMethod|$pathInfo";
 
 session_start();
+
 if(!isset($_SESSION["Logado"]) && $pathInfo!="/login" && $pathInfo!="/cadastro") {
     header(header: "Location:/login");
 }
