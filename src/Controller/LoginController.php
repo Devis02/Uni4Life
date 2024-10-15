@@ -3,8 +3,8 @@
 namespace Devis02\Uni4Life\Controller;
 use Devis02\Uni4Life\Model\Student;
 use Devis02\Uni4Life\Repository\StudentRepository;
-
-class LoginController{
+use Devis02\Uni4Life\Interface\ControllerInterface;
+class LoginController implements ControllerInterface{
     private StudentRepository $studentRepository;
     public function __construct(StudentRepository $studentRepository) {
         $this->studentRepository = $studentRepository;

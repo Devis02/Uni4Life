@@ -1,7 +1,7 @@
 <?php
 namespace Devis02\Uni4Life\Controller;
-
-class FeedViewController{
+use Devis02\Uni4Life\Interface\ControllerInterface;
+class FeedViewController implements ControllerInterface{
 
     public function handle(){
         require_once __DIR__."/../../view/feed.php";
