@@ -14,7 +14,7 @@
     </header>
     <div class="container">
         <nav class="sidebar">
-            <h1 id="logoFeed">Olá, Pessoa da Silva</h1>
+            <h1 id="logoFeed">Olá, <?=$_SESSION["Nome"]?></h1>
             <ul><b>
                 <li> <img class="iconsSideBar" src=".\Complementos\home.png" alt="">PÁGINA INICIAL</li>
                 <li> <img class="iconsSideBar" src=".\Complementos\\procurar.png" alt="">EXPLORAR</li>
@@ -38,6 +38,7 @@
             </div>
             
             <div class="posts">
+            <?php foreach($posts as $post):?>
                 <div class="post">
                     <p>Este é um post de exemplo.</p>
                     <div class="post-options">
@@ -46,9 +47,9 @@
                         <span><img class="icons" src=".\Complementos\\share-square.png" alt=""></span>
                     </div>
                 </div>
+            <?php endforeach?>
             </div>
         </main>
     </div>
-    <script src="./../public/Feed.js"></script>
 </body>
 </html>

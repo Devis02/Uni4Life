@@ -1,9 +1,10 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
 use Devis02\Uni4Life\Connection\ConnectionCreator;
+use Devis02\Uni4Life\Repository\PostRepository;
 use Devis02\Uni4Life\Repository\StudentRepository;
 $pdo = ConnectionCreator::criarConexao();
-$repository = new StudentRepository($pdo);
+$repository = new PostRepository($pdo);
 $routes = require_once __DIR__.'/../config/routes.php';
 $pathInfo = $_SERVER["REQUEST_URI"];
 $httpMethod = $_SERVER["REQUEST_METHOD"];
