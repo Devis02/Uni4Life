@@ -21,5 +21,3 @@ if(array_key_exists(key: $key,array: $routes)){
 }
 
 $controller->handle();
-
-

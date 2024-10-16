@@ -5,4 +5,5 @@ return [
     'POST|/login'=>Devis02\Uni4Life\Controller\LoginController::class,
     'GET|/cadastro'=>Devis02\Uni4Life\Controller\CadastroViewController::class,
     'POST|/cadastro'=>Devis02\Uni4Life\Controller\NewStudentController::class,
+    'GET|/logout'=>Devis02\Uni4Life\Controller\LogoutController::class,
 ];
