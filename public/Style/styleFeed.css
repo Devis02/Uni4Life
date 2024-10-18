@@ -25,6 +25,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: #f4f4f4;
 }
 
 header {
@@ -34,6 +35,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: fixed;
+  width: 100%;
 }
 
 .banner {
@@ -53,21 +56,21 @@ header {
 
 .sidebar {
   width: 200px;
-  height: auto; 
-  background-color: #f4f4f4; 
-  padding: 20px;
-  padding-top: 0px;
+  height: 460px; 
+  background-color: #ffffff; 
+  padding: 1.5rem;
   padding-left: 3rem;
   border-radius: 15px; 
   margin-left: 20px; 
-  margin-top: 35px;
+  margin-top: 80px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
  
 }
 .sidebar ul {
   list-style: none;  
-  padding: 0;
+  padding: 0px;
+ 
   
 }
 
@@ -90,14 +93,15 @@ header {
   border-radius: 5px;
 }
 
-.sidebar li + li {
+/* .sidebar li + li {
   border-top: 1px solid #21409a; 
-}
+} */
 
 #logoFeed {
   font-family: "Gurajada", sans-serif;
   font-size: 30px;
   color: #2777EE;
+  margin: 0;
 }
 
 .logout {
@@ -109,7 +113,8 @@ header {
 .feed {
   flex: 1;
   padding: 1rem 20rem;
-  margin-top: 20px; 
+  margin-top: 80px; 
+
 }
 
 .new-post {
@@ -218,4 +223,8 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 margin-right: 5px;
+}
+
+#link-logout{
+  text-decoration: none;
 }

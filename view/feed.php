@@ -22,7 +22,7 @@
                 <li> <img class="iconsSideBar" src=".\Complementos\\dolar.png" alt="">SALDO</li>
                 <li> <img class="iconsSideBar" src=".\Complementos\\quadrado-mais.png" alt="">CRIAR</li>
                 <li> <img class="iconsSideBar" src=".\Complementos\\perfil.png" alt="">PERFIL</li>
-                <a href="/logout">
+                <a href="/logout" id="link-logout">
                     <div class="logout">
                         <li> <img class="iconsSideBar" src=".\Complementos\\sair.png" alt="">LOGOUT</li>
                     </div>
