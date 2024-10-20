@@ -38,7 +38,7 @@
             </div>
             
             <div class="posts">
-            <?php foreach($posts as $post)://var_dump($post);die;?>
+            <?php foreach($posts as $post):?>
                 <div class="post">
                     <div>
                         <h4><?php echo $post['name'] ?></h4>
