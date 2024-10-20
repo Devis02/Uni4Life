@@ -38,8 +38,11 @@
             </div>
             
             <div class="posts">
-            <?php foreach($posts as $post):?>
+            <?php foreach($posts as $post)://var_dump($post);die;?>
                 <div class="post">
+                    <div>
+                        <h4><?php echo $post['name'] ?></h4>
+                    </div>
                     <p>Este é um post de exemplo.</p>
                     <div class="post-options">
                         <span><img class="icons" src=".\Complementos\\rede-social.png" alt=""></span>
