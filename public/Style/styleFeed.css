@@ -51,7 +51,6 @@ header {
 .container {
   display: flex;
   align-items: flex-start; 
-
 }
 
 .sidebar {
@@ -152,7 +151,8 @@ button {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
- 
+  overflow-y: scroll;
+  height: 370px;
 }
 
 .post {
@@ -166,9 +166,14 @@ button {
 
 .post-options {
   display: flex;
-    align-items: center;
+  align-items: center;
   margin-top: 10px;
   font-size: 14px;
+}
+
+.post-options span{
+  font-size: 11px;
+  margin-right: 2px;
 }
 
 .profile-pic {
@@ -193,6 +198,7 @@ button {
   width: 1rem;
   height: 1rem;
   padding: 0px 2px;
+  cursor: pointer;
   
 }
 
@@ -227,4 +233,10 @@ margin-right: 5px;
 
 #link-logout{
   text-decoration: none;
+}
+
+.post-info{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
 }

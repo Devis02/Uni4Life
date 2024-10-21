@@ -30,6 +30,7 @@ create table post(
     	author_id int not null,
     	likes int not null default 0,
     	comment_quantity int not null default 0,
+		content varchar(250) not null,
     	publish_date date,
     	constraint pk_post primary key(id),
     	constraint fk_author_id foreign key(author_id) references student(id)
@@ -41,6 +42,7 @@ create table comment(
     	post_id int not null,
     	likes int not null default 0,
     	comment_quantity int not null default 0,
+		content varchar(250) not null,
     	publish_date date,
     	constraint pk_commentary primary key(id),
     	constraint fk_comment_author_id foreign key(author_id) references student(id),

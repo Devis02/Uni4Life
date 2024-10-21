@@ -14,4 +14,12 @@ class PostRepository{
         $posts = $stmt->fetchAll();
         return $posts;
     }
+
+    public function insertPostIntoDataBase(int $id,string $content):bool{
+        $stmt = $this->pdo->prepare(query: "INSERT INTO post (author_id,content,publish_date) VALUES(?,?,?);");
+        $stmt->bindValue(param: 1,value: $id);
+        $stmt->bindValue(param:2,value: $content);
+        $stmt->bindValue(3,date("Y/m/d"));
+        return $stmt->execute();
+    }
 }

@@ -31,24 +31,28 @@
             </b></ul>
         </nav>
         <main class="feed">
-            <div class="new-post">
-                <img src=".\Complementos\\perfilfoto.jpeg" alt="Perfil" class="profile-pic" />
-                <textarea placeholder="No que você está pensando?"></textarea>
-                <button id="Enviar">Enviar</button>
-            </div>
+            <form class="new-post" method="post">
+                <img src=".\Complementos\\user-icon.png" alt="Perfil" class="profile-pic" />
+                <textarea name="post-content" placeholder="No que você está pensando?"></textarea>
+                <button id="Enviar" type="submit">Enviar</button>
+            </form>
             
             <div class="posts">
             <?php foreach($posts as $post):?>
                 <div class="post">
-                    <div>
-                        <h4><?php echo $post['name'] ?></h4>
+                    <div class="post-info">
+                        <img src=".\Complementos\\user-icon.png" alt="Ícone de usuário" class="profile-pic">
+                        <h4 style="margin-right:5px"><?php echo $post['name']." :"?></h4>
+                        <p><?php echo $post["content"]?></p>
                     </div>
-                    <p>Este é um post de exemplo.</p>
+                    
                     <div class="post-options">
-                        <span><img class="icons" src=".\Complementos\\rede-social.png" alt=""></span>
-                        <span><img class="icons" src=".\Complementos\\comente.png" alt=""></span>
-                        <span><img class="icons" src=".\Complementos\\share-square.png" alt=""></span>
+                        <span><img class="icons" src=".\Complementos\\rede-social.png" alt=""><?php echo $post['likes']?></span>
+                        <span><img class="icons" src=".\Complementos\\comente.png" alt=""><?php echo $post['comment_quantity']?></span>
+                        <span><img class="icons" src=".\Complementos\\calendario.png" alt=""></span>
+                        <span><?php echo $post["publish_date"]?></span>
                     </div>
+                    
                 </div>
             <?php endforeach?>
             </div>

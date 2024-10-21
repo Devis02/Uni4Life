@@ -20,6 +20,7 @@ class LoginController implements ControllerInterface{
         if(password_verify(password: $password,hash: $verificationStudent->getPassword())){
             $_SESSION["Logado"] = true;
             $_SESSION["Nome"] = $verificationStudent->getName();
+            $_SESSION["id"] = $verificationStudent->getId();
             header(header: "Location: /");
         } else{
             header(header: "Location: /login");
