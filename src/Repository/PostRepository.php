@@ -10,7 +10,7 @@ class PostRepository{
     }
 
     public function getPostsFromDataBase(): array{
-        $stmt = $this->pdo->query("SELECT * FROM post JOIN student on post.author_id = student.id");
+        $stmt = $this->pdo->query("SELECT * FROM post JOIN student on post.author_id = student.id ORDER BY post.id DESC" );
         $posts = $stmt->fetchAll();
         return $posts;
     }
