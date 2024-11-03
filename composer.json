@@ -7,5 +7,7 @@
             "Devis02\\Uni4Life\\": "src\\"
         }
     },
-    "require": {}
+    "require": {
+        "symfony/dotenv": "^7.1"
+    }
 }

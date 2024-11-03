@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInita2a99e003d2c9d7986674f2b62ee8a36
 {
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Component\\Dotenv\\' => 25,
+        ),
         'D' => 
         array (
             'Devis02\\Uni4Life\\' => 17,
@@ -14,6 +18,10 @@ class ComposerStaticInita2a99e003d2c9d7986674f2b62ee8a36
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Component\\Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dotenv',
+        ),
         'Devis02\\Uni4Life\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
