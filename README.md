@@ -3,11 +3,11 @@
 - Configurar as variáveis de ambiente para acesso ao banco de dados:
   1. criar um arquivo com o nome de ".env" na pasta raiz do projeto
   2. Definir as seguintes variáveis:
-     DB="banco"                      |  mysql,pgsql,sqlite
-     DB_HOST="host"                  |  host do banco 
-     DB_NAME="base/schema"           |  Nome da base/schema
-     DB_USER="usuário"               |  usuário do banco
-     DB_PASSWORD="senha"             |  senha do banco
+     |DB="banco"                      |  mysql,pgsql,sqlite  |
+     |DB_HOST="host"                  |  host do banco       |
+     |DB_NAME="base/schema"           |  Nome da base/schema |
+     |DB_USER="usuário"               |  usuário do banco    |
+     |DB_PASSWORD="senha"             |  senha do banco      |
      
 #Etapas para execução:
 - entrar na pastra "public" (cd public)
