@@ -1,8 +1,9 @@
 # Uni4Life
-#Configurações iniciais necessárias para acesso:
+
+# Configurações iniciais necessárias para acesso:
 - Configurar as variáveis de ambiente para acesso ao banco de dados:
-  1. criar um arquivo com o nome de ".env" na pasta raiz do projeto
-  2. Definir as seguintes variáveis:
+  1.criar um arquivo com o nome de ".env" na pasta raiz do projeto
+  2.Definir as seguintes variáveis:
      |DB="banco"                      |  mysql,pgsql,sqlite  |
      |DB_HOST="host"                  |  host do banco       |
      |DB_NAME="base/schema"           |  Nome da base/schema |
