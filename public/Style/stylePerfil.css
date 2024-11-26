@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+#body_perfil {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.ContainerPerfil {
+    margin-top: 50px;
+    background-image: url(../Uni4Life/Complementos/capa.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 175px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    position: fixed;
+    top: 20px;
+    right: 150px;
+}
+
+.Perfil {
+    margin: 135px 50px 0 0;
+    width: 700px;
+    height: 175px;
+}
+
+#Nome {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+#Bio {
+    font-size: 15px;
+    margin: 0;
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis; 
+    width: 100%; 
+}
+#Foto {
+    width: 130px;
+    height: 130px;
+    border-radius: 90%;
+    border: 5px solid white;
+}
+
+.Seguimores {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.Seguimores2{
+    margin-right: 10px;
+}
+
+
+.MenuAba {
+    margin-top: 400px;
+    width: auto;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    top: 20px;
+    margin-right: 10px;
+
+}
+
+.MenuAba button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.MenuAba button:hover {
+    color: #000;
+}
+
+.AbaSelecionada {
+    color: #000;
+    font-weight: 600;
+    border-bottom: 2px solid #007BFF; 
+}
+
+
+ .ConteudoAba {
+    width: 700px;
+    height: 175px;
+    margin-top: 475px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+} 
+.ConteudoAba p {
+    font-size: 16px;
+    color: #333;
+}
+

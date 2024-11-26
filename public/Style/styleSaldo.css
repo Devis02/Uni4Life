@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#body_2 {
+    background-color: #d1d2d3;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+#containercompra {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    margin-left: 250px;
+}
+
+#extrato {
+    flex: 0.6; 
+    padding: 20px;
+    background-color: #f1f3f4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#extrato h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.transacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.transacao .descricao {
+    font-weight: bold;
+    color: #333;
+}
+
+.transacao .data {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.transacao .valor {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.valor.negativo {
+    color: #ff4d4d;
+}
+
+.valor.positivo {
+    color: #28a745;
+}
+
+
+#saldo-pix-container {
+    flex: 0.4; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#saldo-container {
+    background-color: #f1f3f4;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+#saldo-container h2 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#valor-saldo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+#formas-pagamento {
+    background-color: #f1f3f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#formas-pagamento h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.pagamento-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pagamento-box label {
+    font-weight: bold;
+}
+
+.pagamento-box input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cancelar {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+
+.gerar {
+    background-color: #007bff;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #containercompra {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-left: 0;
+    }
+    
+    #extrato, #saldo-pix-container {
+        width: 100%;
+    }
+}

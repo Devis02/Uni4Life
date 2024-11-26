@@ -7,4 +7,6 @@ return [
     'GET|/cadastro'=>Devis02\Uni4Life\Controller\CadastroViewController::class,
     'POST|/cadastro'=>Devis02\Uni4Life\Controller\NewStudentController::class,
     'GET|/logout'=>Devis02\Uni4Life\Controller\LogoutController::class,
+    'GET|/saldo'=>Devis02\Uni4Life\Controller\SaldoViewController::class,
+    'GET|/perfil'=>Devis02\Uni4Life\Controller\PerfilViewController::class,
 ];

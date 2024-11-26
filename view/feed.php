@@ -3,7 +3,7 @@
     <form class="new-post" method="post">
         <img src=".\Complementos\\user-icon.png" alt="Perfil" class="profile-pic" />
         <textarea name="post-content" placeholder="No que você está pensando?"></textarea>
-        <button id="Enviar" type="submit">Enviar</button>
+        <button id="Enviar" class="button_feed" type="submit">Enviar</button>
     </form>
             
     <div class="posts">
